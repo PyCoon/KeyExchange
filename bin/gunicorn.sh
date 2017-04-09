@@ -1,5 +1,9 @@
 #!/usr/bin/zsh
 
+#########################
+# GUNICORN CONF EXAMPLE #
+#########################
+
 # Votre dossier d'installation
 INSTALATION_DIR='/src/keyexchange'
 USER=smalakey
