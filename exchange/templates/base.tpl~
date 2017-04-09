@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="FR">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Smala Key Exchange</title>
+        <meta name="description" content="Le site de partage de clefs.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load staticfiles %}
+
+
+                <link rel="stylesheet" type="text/css" href="{% static "css/pure.css" %}" />
+                <link rel="stylesheet" type="text/css" href="{% static "css/style_sheet.css" %}" />
+    </head>
+
+    <body>
+
+        <header>
+
+      
+</br>
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                </div>
+                <div class="pure-u-1-2">
+                                             <aside id="connect_with">
+  Bonjour {{ request.user.username|default:"Etranger" }}</aside> 
+                        <img id="logo" src="{% static "img/logo.png" %}" class="pure-img" alt="SmalaKey" />
+                         </div> 
+                          </div>  
+                           
+                           
+           
+            <div class="pure-g main-navbar">   
+ <div class="pure-u-1-4">
+                </div>     
+    
+        <div class="pure-u-1-2">
+
+                    <nav class="pure-menu pure-menu-horizontal">
+                        <ul class="pure-menu-list nomenu">
+                            <li class="pure-menu-item pure-menu-selected"><a href="{% url 'front_page' %}" class=" nomenu pure-menu-link">ACCEUIL</a></li>
+                            <li class="pure-menu-item pure-menu-selected"><a href="{% url 'all_users_list' %}" class=" nomenu pure-menu-link">COMMUNAUTE</a></li>
+
+
+                                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                                <a href="{% url 'tutoriels' %}"  class="nomenu pure-menu-link">TUTOS</a>
+                                <ul class="pure-menu-children">
+                                <li class="pure-menu-item"><a href="{% url 'installation' %}" class="nomenu pure-menu-link">1. INSTALLER</a></li>
+                                    <li class="pure-menu-item"><a href="{% url 'ajouter_ami' %}" class="nomenu pure-menu-link">2. AJOUTER DES AMIS</a></li>
+                                    <li class="pure-menu-item"><a href="{% url 'partager' %}" class="nomenu pure-menu-link">3. PARTAGER</a></li>
+
+                                </ul>
+                            </li>
+                            
+                  </li>
+                  
+                     <a href="{% url 'front_page' %}"   >
+                  <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover account_logo"  >
+                  <img  class="pure-img" id="account_logo" src="{% static "img/my account_key2.png" %}" alt="MON COMPTE"> <div id="notif" >{% if request.session.notifications > 0 %}{{request.session.notifications}} !{% endif %} </div> </a>
+                   <ul class="pure-menu-children">
+                                    
+                                    <li class="pure-menu-item"><a href="{% url 'account_detail' %}" class="nomenu pure-menu-link">MON COMPTE</a></li>
+                                   
+                                    <li class="pure-menu-item"><a href="{% url 'login_user' %}" class="nomenu pure-menu-link">CONNEXION AVEC UN AUTRE COMPTE</a></li>
+                                    <li class="pure-menu-item"><a href="{% url 'logout_view' %}" class="nomenu pure-menu-link">DECONNEXION</a></li></ul>
+                  </li>
+                       </ul> 
+                         </nav>
+
+
+   </div>                
+</div>
+
+            <div class="hr"></div>
+        </header>
+
+        <div class="pure-g">
+           <div class="pure-u-1-4">
+            </div>
+
+
+            <div class="pure-u-1-2">
+            
+            <section>
+                                        <div class="login_session">
+
+            </div>
+{% block content %}
+{% endblock %}
+
+
+            </section>
+
+
+
+        </div>
+
+    </body>
+
+</html>

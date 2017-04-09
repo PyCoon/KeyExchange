@@ -1,0 +1,150 @@
+/* Début test */
+
+body{
+  background-color: #F1F1F1 ;
+
+  }
+  
+dt{font-weight: bold;
+}
+dd{ font-style: italic;}
+.pure-menu-item{
+  background-color:white;
+  letter-spacing: 0.08em; word-spacing: 0.3em;
+
+}
+/* Fin test */
+
+section{
+  border-width: 4px;
+  border-style:solid ;
+  border-color:#F4F4F4 ;
+  background-color:white;
+  padding:1em;
+  border-radius: 15px;
+  
+}
+
+
+#logo{
+
+  padding-top:1em;
+  /* Début test */
+
+  /* Fin test */
+}
+.main-navbar{
+
+  padding-top:0.5em;
+  /* Début test */
+
+  /* Fin test */}
+
+.pure-menu-item  {
+  border: 3px #08B9CC solid ;
+  border-radius: 10px ;
+
+}
+.nobutton{
+  background-color: #08B9CC;
+  border: 3px #08B9CC solid ;
+  border-radius: 10px ;
+}
+
+.nomenu{
+color: black;
+}
+.hr {
+     color:#B3111D;
+     background: #B3111D;
+     width: 100%;
+     height: 3px;
+       margin-top:1em;
+
+  /* Début test */
+
+  /* Fin test */}
+form ul{
+  
+  font-style: italic;
+}
+#message{
+  font-style: italic;
+}
+section{
+  line-height:130%;
+ 
+
+}
+.img_tuto{
+
+    margin: 0 auto; 
+    margin-bottom: 70px;
+     margin-top: 30px;
+    
+    }
+header{
+  padding-bottom:2em;
+
+
+  /* Fin test */}
+  
+.sitecontent{
+line-height: 2em;
+font-family: Arial,Verdana,sans-serif;
+    }
+.login_session{
+font-style: italic;
+}
+
+.data-list{
+border-width:2px;
+border-style:ridge;
+border-color:black; }
+
+
+.key{
+ text-align: justify;
+    text-justify: inter-word;
+    font-size: 12px;
+    color: grey;
+    font-weight: bold;
+   letter-spacing: 2px;
+   word-spacing: 2px ; 
+   line-height:90%;
+}
+
+
+a{
+color:#B3111D;
+}
+
+.account_logo{
+
+letter-spacing: 0.08em; 
+  word-spacing: 0.3em;
+  border-style: none;
+  margin-left: 6em;
+
+  }
+  
+.account_logo:hover{
+border-width:3px;
+border-style:solid;
+border-color:#08B9CC; 
+background-color: none;
+}
+
+#account_logo{
+display:inline; 
+
+}
+#notif{
+display: inline;
+font-style: italic;
+}
+
+#connect_with{
+float: right;
+
+}

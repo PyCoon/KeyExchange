@@ -1,0 +1,34 @@
+
+{% extends "base.tpl" %}
+
+{% block content %}
+
+<p>Bienvenu sur Smalakey, le site d'echange de clefs autour de Retroshare. </br>
+Retroshare est un logiciel de partage d'amis à amis qui utilise BitTorrent pour partager des fichiers mais aussi chatter et envoyer des messasges. Le programme est entièrement libre (licence GPL) et utilise une couche de chiffrement afin de sécuriser les échanges. </p>
+
+Le logiciel fonctionne comme un réseau social, et permet d'echanger des fichiers, des messages mais aussi de faire de la Voix sur Ip (comme skype), et des salons de chat, le tout de manière completement déscentralisé. 
+
+Pour pouvoir communiquer avec ses amis, il est nécessaire d'echanger sa "clef" retroshare, celle ci se compose d'une ligne de code chiffrée. Une fois que deux personnes on mutuellement ajoutés leur clefs, ils peuvent communiquer et échanger. 
+
+Vous pouver utiliser Retroshare pour partager de gros fichiers à la manière d'un logiciel Bittorrent. 
+
+
+ <a href="http://www.bibmath.net/crypto/index.php?action=affiche&quoi=moderne/clepub" >page explicative</a> </p>
+ Je vous conseile d'abord de 
+Avant toutes choses, je vous conseille d'ajouter votre clefs pour que celle ci puissent être utilisé par la communauté <a href="{% url 'upload_key' %}" >en cliquant ici</a>.
+<a href="http://127.0.0.1:8000/exchange/login" > login </a></br>
+
+<a href="http://127.0.0.1:8000/exchange/password_reset" > password_reset </a></br>
+
+<a href="http://127.0.0.1:8000/exchange/do_reset_password_now" > do_reset_password_now </a></br>
+
+<a href="http://127.0.0.1:8000/exchange/logout/" > logout </a></br>
+
+<a href="http://127.0.0.1:8000/exchange/change_pass/" > change_pass </a></br>
+
+<a href="http://127.0.0.1:8000/exchange/account/" > account </a></br>
+<a href="http://127.0.0.1:8000/exchange/tutorial_page" > tutorial_page </a></br>
+<a href="http://127.0.0.1:8000/account/" > account </a></br>
+<a href="http://127.0.0.1:8000/exchange/upload_key" > upload_key  </a></br>
+
+{% endblock %}
